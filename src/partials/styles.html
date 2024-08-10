@@ -1,4 +1,8 @@
 <style>
+    :root {
+        --color: #1bff80;
+    }
+
     .shower {
         --slide-ratio: calc(16 / 9);
     }
@@ -12,21 +16,23 @@
     }
 
 
-
     .slide {
         font-size: 20px;
-        padding: 10px 50px;
+        padding: 10px;
 
         &:after {
-            background: #BF3030;
+            background: var(--color);
             width: 50px;
             height: 50px;
             padding: 0;
             left: initial;
-            right: 0;
+            right: 14px;
+            top: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-weight: bold;
+            font-size: 30px;
         }
 
         h2,
@@ -40,7 +46,7 @@
                 position: absolute;
                 bottom: -5px;
                 left: 0;
-                background-color: #BF3030;
+                background-color: #bf3030;
                 width: 100%;
                 height: 3px;
             }
@@ -53,7 +59,7 @@
 
     .progress {
         &:before {
-            background-color: #BF3030;
+            background-color: var(--color);
         }
     }
 
@@ -74,14 +80,13 @@
         right: 0;
         left: 0;
         z-index: 0;
-        opacity: .5;
-        filter: blur(2px);
+        background-color: black;
     }
 
     .chapter-title {
         position: relative;
-        border: 10px solid #BF3030;
-        color: black;
+        border: 10px solid var(--color);
+        color: var(--color);
         font: 800 50px/100% Roboto;
         padding: 60px;
         text-align: center;
@@ -103,14 +108,6 @@
         }
     }
 
-    .def {
-        display: inline-block;
-        background-color: #f3f3f3;
-        padding: 0 5px;
-        border-radius: 5px;
-        margin-bottom: 5px;
-    }
-
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -118,7 +115,7 @@
         gap: 10px;
         width: 100%;
 
-        &>div {
+        & > div {
             font-size: inherit;
         }
 
@@ -155,7 +152,7 @@
             padding-left: 50px;
         }
 
-        &>div {
+        & > div {
             font-size: inherit;
         }
 
@@ -169,18 +166,18 @@
     }
 
     .border {
-        border: 1px solid #BF3030;
+        border: 1px solid #bf3030;
         border-radius: 5px;
         padding: 2.5px 5px;
     }
 
     .left-border {
-        border-left: 3px solid #BF3030;
+        border-left: 3px solid #bf3030;
         padding-left: 10px;
     }
 
     .filled {
-        background-color: #BF3030;
+        background-color: #bf3030;
         color: white;
     }
 
@@ -196,7 +193,7 @@
             left: 50%;
             width: 50px;
             height: 50px;
-            background-color: #BF3030;
+            background-color: #bf3030;
             color: white;
             border-radius: 50%;
             transform: translateX(-50%);
@@ -250,7 +247,7 @@
     }
 
     .danger {
-        background-color: #BF3030;
+        background-color: #bf3030;
 
         &:before {}
     }
@@ -289,6 +286,134 @@
                 text-align: center;
                 width: 25px;
                 max-width: 25px;
+            }
+        }
+    }
+
+
+    .fallout {
+        background-color: rgba(0, 0, 0, 1);
+        color: var(--color);
+
+        legend {
+            font-weight: bold;
+            color: var(--color);
+        }
+
+        fieldset {
+            border: 3px solid var(--color);
+            height: calc(100% - 10px);
+
+        }
+
+        .grid {
+            display: flex;
+            height: 100%;
+            gap: 30px;
+        }
+
+        .left {
+            width: 35%;
+            height: 100%;
+        }
+
+        .list {
+            & li {
+                padding: 0 5px;
+
+                &.active {
+                    border: 1px solid var(--color);
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        .active {
+
+        }
+
+        .right {
+            width: 65%;
+            height: 100%;
+            display: flex;flex-direction: column;
+            position: relative;
+            justify-content: flex-end;
+        }
+
+        .img {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 0;
+            left: 50%;
+            translate: -50% -10%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        table {
+
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            height: 40%;
+            position: relative;
+            border-top: 1px solid var(--color);
+            padding-right: 10px;
+            gap: 10px;
+
+            &.full {
+                margin-top: 40px;
+                height: 100%;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: var(--color);
+                width: 1px;
+                height: 30px;
+            }
+
+            .def {}
+
+            .deps {
+                border-top: 1px solid var(--color);
+
+                .dep {
+                    position: relative;
+                    padding-right: 10px;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 10px;
+                        height: 10px;
+                        translate: 1px -75%;
+                        font-weight: bold;
+
+                    }
+
+                    &.positive:before {
+                        content: '↑';
+                        color: var(--color);
+                    }
+
+                    &.negative:before {
+                        content: '↓';
+                        color: red;
+                    }
+                }
             }
         }
     }

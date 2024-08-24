@@ -304,10 +304,11 @@
             color: var(--light-color);
             font-size: 25px;
             position: relative;
+
             &:before {
                 position: absolute;
                 content: '';
-                width: 117%;
+                width: calc(100% + 35px);
                 height: 100%;
                 background-color: var(--primary-color);
                 top: 0;
@@ -328,25 +329,37 @@
             display: flex;
             height: 100%;
             gap: 30px;
+
+            & img {
+                max-width: 100%;
+                max-height: 50%;
+                object-fit: contain;
+                height: 100%;
+            }
         }
 
         .left {
-            width: 35%;
+            width: 25%;
             height: 100%;
-           
+            border: 2px solid var(--primary-color);
+            background-color: var(--light-color);
+
+            &.half {
+                width: 50%;
+            }
         }
 
         .list {
-            border: 2px solid var(--primary-color);
             background-color: var(--light-color);
             z-index: 1;
             position: relative;
             height: 100%;
+            font-size: 14px;
             & li {
                 padding: 0 5px;
 
                 &.active {
-                    background-color:var(--primary-color);
+                    background-color: var(--primary-color);
                     color: var(--light-color);
                 }
 
@@ -359,17 +372,26 @@
         .active {}
 
         .right {
-            width: 65%;
+            overflow: hidden;
+            width: 75%;
             height: 100%;
             display: flex;
             flex-direction: column;
             position: relative;
             justify-content: flex-end;
+            border: 2px solid var(--primary-color);
+            background-color: var(--light-color);
+
+            &.half {
+                width: 50%;
+            }
+
             & ul {
                 padding-left: 25px;
                 position: relative;
+
                 & li::before {
-                    color: var(--primary-color)!important;
+                    color: var(--primary-color) !important;
                     opacity: 1;
                 }
             }
@@ -396,20 +418,21 @@
             flex-direction: column;
             height: 50%;
             position: relative;
-            border: 2px solid var(--primary-color);
             padding-right: 10px;
             gap: 10px;
-            background-color: var(--light-color);
             padding: 0 5px;
 
             &.full {
                 height: 100%;
             }
 
-            .def {}
+            .def {
+                position: relative;
+               
+            }
 
             .deps {
-                border-top: 1px solid var(--primary-color);
+
 
                 .dep {
                     position: relative;

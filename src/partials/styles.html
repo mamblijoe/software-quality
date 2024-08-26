@@ -339,10 +339,8 @@
         }
 
         .left {
-            width: 25%;
+            width: 20%;
             height: 100%;
-            border: 2px solid var(--primary-color);
-            background-color: var(--light-color);
 
             &.half {
                 width: 50%;
@@ -350,11 +348,13 @@
         }
 
         .list {
+            border: 2px solid var(--primary-color);
             background-color: var(--light-color);
             z-index: 1;
             position: relative;
             height: 100%;
             font-size: 14px;
+
             & li {
                 padding: 0 5px;
 
@@ -373,15 +373,14 @@
 
         .right {
             overflow: hidden;
-            width: 75%;
+            width: 80%;
             height: 100%;
             display: flex;
             flex-direction: column;
             position: relative;
-            justify-content: flex-end;
-            border: 2px solid var(--primary-color);
-            background-color: var(--light-color);
+            justify-content: center;
             flex-grow: 1;
+
             &.half {
                 width: 50%;
             }
@@ -413,6 +412,14 @@
             background-color: var(--light-color);
         }
 
+        .def {
+                padding: 0 5px;
+                position: relative;
+                border: 2px solid var(--primary-color);
+                background-color: var(--light-color);
+                margin: 5px 0; 
+            }
+
         .text {
             display: flex;
             flex-direction: column;
@@ -426,10 +433,7 @@
                 height: 100%;
             }
 
-            .def {
-                position: relative;
-               
-            }
+          
 
             .deps {
 

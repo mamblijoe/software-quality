@@ -352,10 +352,8 @@
         }
 
         .left {
-            width: 25%;
+            width: 20%;
             height: 100%;
-            border: 2px solid var(--primary-color);
-            background-color: var(--light-color);
 
             &.half {
                 width: 50%;
@@ -363,11 +361,13 @@
         }
 
         .list {
+            border: 2px solid var(--primary-color);
             background-color: var(--light-color);
             z-index: 1;
             position: relative;
             height: 100%;
             font-size: 14px;
+
             & li {
                 padding: 0 5px;
 
@@ -386,15 +386,14 @@
 
         .right {
             overflow: hidden;
-            width: 75%;
+            width: 80%;
             height: 100%;
             display: flex;
             flex-direction: column;
             position: relative;
-            justify-content: flex-end;
-            border: 2px solid var(--primary-color);
-            background-color: var(--light-color);
+            justify-content: center;
             flex-grow: 1;
+
             &.half {
                 width: 50%;
             }
@@ -426,6 +425,14 @@
             background-color: var(--light-color);
         }
 
+        .def {
+                padding: 0 5px;
+                position: relative;
+                border: 2px solid var(--primary-color);
+                background-color: var(--light-color);
+                margin: 5px 0; 
+            }
+
         .text {
             display: flex;
             flex-direction: column;
@@ -439,10 +446,7 @@
                 height: 100%;
             }
 
-            .def {
-                position: relative;
-               
-            }
+          
 
             .deps {
 
@@ -502,12 +506,7 @@
     <div class="chapter-title">Качество ПО</div>
 </section>
 
-    <section class="slide fallout chapter-wrapper">
-    <div class="chapter-title">Качество ПО</div>
-    <img class="code-bg" src="pictures/code-bg.jpg" alt="">
-</section>
-
-<section class="slide fallout">
+    <section class="slide fallout">
     <img class="code-bg" src="pictures/code-bg.jpg" alt="">
     <fieldset>
         <legend>Качество ПО: Определение</legend>
@@ -520,11 +519,14 @@
             </div>
             <div class="right">
                 <div class="img" style="background-image: url('../../pictures/sprite.jpg')"></div>
-                <div class="text">
+                <div>
                     <div class="def">
                         Качество ПО — это совокупность характеристик, которые определяют способность программы
                         удовлетворять требованиям пользователей, быть надёжной, производительной, безопасной и удобной в
-                        использовании. Это не только отсутствие ошибок, но и соответствие продукта ожиданиям и
+                        использовании.
+                    </div>
+                    <div class="def">
+                        Это не только отсутствие ошибок, но и соответствие продукта ожиданиям и
                         потребностям клиента.
                     </div>
                 </div>
@@ -545,16 +547,17 @@
             </div>
             <div class="right">
                 <div class="text full">
-                    Повышение качества ПО — это не просто техническая задача, а стратегическая необходимость. <br>
-                    <br>
-                    Почему это важно? Качественное ПО это:
+                    <div class="def">Повышение качества ПО — это не просто техническая задача, а стратегическая
+                        необходимость. </div>
                     <ul>
-                        <li>Повышение удовлетворенности пользователей</li>
-                        <li>Снижение затрат на поддержку</li>
-                        <li>Быстрое время выхода на рынок</li>
-                        <li>Снижение технического долга</li>
-                        <li>Конкурентное преимущество</li>
+                        <li class="def">Повышение удовлетворенности пользователей</li>
+                        <li class="def">Снижение затрат на поддержку</li>
+                        <li class="def">Быстрое время выхода на рынок</li>
+                        <li class="def">Снижение технического долга</li>
+                        <li class="def">Конкурентное преимущество</li>
                     </ul>
+
+
                 </div>
             </div>
         </div>
@@ -575,8 +578,7 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                <div>
                     <div class="def">
                         Пользователи выбирают ПО, которое работает стабильно и предсказуемо. Высокое качество продукта
                         способствует росту лояльности клиентов и улучшению репутации компании
@@ -601,11 +603,14 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Чем выше качество продукта на этапе разработки, тем меньше времени и ресурсов потребуется на
-                        исправление ошибок в будущем. Это позволяет команде сосредоточиться на развитии продукта, а не
+                        исправление ошибок в будущем.
+                    </div>
+                    <div class="def">
+                        Это позволяет команде сосредоточиться на развитии продукта, а не
                         на постоянном устранении проблем.
                     </div>
                 </div>
@@ -628,11 +633,14 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Высокое качество ПО позволяет избегать задержек, связанных с исправлением критических багов
-                        перед релизом. Это ускоряет процесс вывода продукта на рынок и снижает риски.
+                        перед релизом. 
+                    </div>
+                    <div class="def">
+                        Это ускоряет процесс вывода продукта на рынок и снижает риски.
                     </div>
                 </div>
             </div>
@@ -654,11 +662,14 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Работая над качеством, команда уменьшает количество накопившихся проблем, которые могут
-                        замедлить разработку в будущем. Это делает систему более гибкой и масштабируемой.
+                        замедлить разработку в будущем. 
+                    </div>
+                    <div class="def">
+                        Это делает систему более гибкой и масштабируемой.
                     </div>
                 </div>
             </div>
@@ -680,11 +691,14 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         В условиях жесткой конкуренции качество ПО может стать тем фактором, который выделит продукт на
-                        фоне других. Это важный элемент, который помогает бизнесу не только удерживать, но и привлекать
+                        фоне других. 
+                    </div>
+                    <div class="def">
+                        Это важный элемент, который помогает бизнесу не только удерживать, но и привлекать
                         новых клиентов.
                     </div>
                 </div>
@@ -704,8 +718,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         В итоге, забота о качестве ПО — это не просто стремление к совершенству, а инвестиция в
                         устойчивость и успех проекта в долгосрочной перспективе.
@@ -726,9 +740,8 @@
         <div class="grid">
             <div class="left half">
                 <div class="text full">
-                    <div class="def">
-                        Внешние характеристики — категория свойств ПО, которая волнует пользователей (и разработчиков).
-                    </div>
+                    <div class="def">Внешние характеристики — категория свойств ПО, которая волнует пользователей (и
+                        разработчиков).</div>
                     <img src="pictures/ux.jpg" alt="">
                 </div>
             </div>
@@ -757,18 +770,19 @@
             <div class="right">
                 <div class="text full">
                     <div class="def">
-                        Внешние характеристики — категория свойств ПО, которая волнует пользователей.
+                        Внешние характеристики — категория свойств, которая волнует пользователей.
                     </div>
-                    <ul>
-                        <li>Корректность</li>
-                        <li>Практичность</li>
-                        <li>Эффективность</li>
-                        <li>Надежность</li>
-                        <li>Целостность</li>
-                        <li>Адаптируемость</li>
-                        <li>Правильность</li>
-                        <li>Живучесть</li>
-                    </ul>
+                        <ul>
+                            <li class="def">Корректность</li>
+                            <li class="def">Практичность</li>
+                            <li class="def">Эффективность</li>
+                            <li class="def">Надежность</li>
+                            <li class="def">Целостность</li>
+                            <li class="def">Адаптируемость</li>
+                            <li class="def">Правильность</li>
+                            <li class="def">Живучесть</li>
+                        </ul>
+
                 </div>
             </div>
         </div>
@@ -791,15 +805,15 @@
                         Внутренние характеристики (наряду с внешними) — категория свойств ПО, которая волнует
                         программистов.
                     </div>
-                    <ul>
-                        <li>Удобство сопровождения</li>
-                        <li>Гибкость</li>
-                        <li>Портируемость</li>
-                        <li>Возможность повторного использования</li>
-                        <li>Удобочитаемость</li>
-                        <li>Тестируемость</li>
-                        <li>Понятность</li>
-                    </ul>
+                        <ul>
+                            <li class="def">Удобство сопровождения</li>
+                            <li class="def">Гибкость</li>
+                            <li class="def">Портируемость</li>
+                            <li class="def">Возможность повторного использования</li>
+                            <li class="def">Удобочитаемость</li>
+                            <li class="def">Тестируемость</li>
+                            <li class="def">Понятность</li>
+                        </ul>
                 </div>
             </div>
         </div>
@@ -824,7 +838,7 @@
             </div>
             <div class="right">
                 <img src="pictures/3.svg" alt="">
-                <div class="text">
+                <div>
                     <div class="def">
                         Корректность — показывает отсутствие или наличие дефектов в бизнес-правилах, проекте и конечной
                         реализации системы.
@@ -853,10 +867,12 @@
             </div>
             <div class="right">
                 <img src="pictures/4.jpg" alt="">
-                <div class="text">
+                <div>
                     <div class="def">
                         Практичность — показывает насколько легко пользователю изучать и пользоваться ПО.
-                        <br> Легко ли он
+                    </div>
+                    <div class="def">
+                        Легко ли он
                         находит нужный функционал или наоборот, тратит много времени
                     </div>
                 </div>
@@ -883,10 +899,12 @@
             </div>
             <div class="right">
                 <img src="pictures/5.jpg" alt="">
-                <div class="text">
+                <div>
                     <div class="def">
                         Эффективность — показывает как ПО использует системные ресурсы пользователя.
-                        <br>Потребляет ли оно
+                    </div>
+                    <div class="def">
+                        Потребляет ли оно
                         минимальное количество ресурсов или работает только на мощных системах.
                     </div>
                 </div>
@@ -913,11 +931,13 @@
             </div>
             <div class="right">
                 <img src="pictures/18.jpg" alt="">
-                <div class="text">
+                <div>
                     <div class="def">
                         Надежность — показывает способность ПО работать в обычном режиме в условиях для которых она
-                        предназначалась. 
-                        <br>ПО с высокой надежностью имеет низкий или средний интервал между отказами.
+                        предназначалась.
+                    </div>
+                    <div class="def">
+                        ПО с высокой надежностью имеет низкий или средний интервал между отказами.
                     </div>
                 </div>
             </div>
@@ -943,7 +963,7 @@
             </div>
             <div class="right">
                 <img src="pictures/7.png" alt="">
-                <div class="text">
+                <div>
                     <div class="def">
                         Целостность — показывает способность ПО не допускать пользователя в те части системы к которым
                         он не должен иметь доступ.
@@ -972,7 +992,7 @@
             </div>
             <div class="right">
                 <img src="pictures/8.jpg" alt="">
-                <div class="text">
+                <div>
                     <div class="def">
                         Адаптируемость — показывает способность ПО без его изменения использоваться в тех областях или
                         средах, на которые она не была ориентирована непосредственно .
@@ -1001,7 +1021,7 @@
             </div>
             <div class="right">
                 <img src="pictures/9.svg" alt="">
-                <div class="text">
+                <div>
                     <div class="def">
                         Правильность — показывает степень безошибочности системы, насколько точно ПО выводит данные.
                     </div>
@@ -1029,7 +1049,7 @@
             </div>
             <div class="right">
                 <img src="pictures/22.jpg" alt="">
-                <div class="text">
+                <div>
                     <div class="def">
                         Живучесть — показывает способность ПО продолжать работу при вводе недопустимых данных, в
                         критических сбоях, наличие таких приемов как Gracefull Degradation
@@ -1057,8 +1077,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Удобство сопровождения — показывает насколько легко изменять систему, в целях добавления новых
                         возможностей или внесения правок.
@@ -1085,8 +1105,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Гибкость — показывает потенциальную возможность изменения ПО с целью использования ее в тех
                         областях или средах, на которые она не была непосредственно ориентирована.
@@ -1113,8 +1133,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Портируемость — показывает насколько легко перенести ПО в среду для которой оно изначально не
                         создавалось.
@@ -1141,8 +1161,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Возможность повторного использования — показывает меру и возможность использования отдельных
                         модулей ПО в другой системе.
@@ -1169,8 +1189,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Удобочитаемость — показывает насколько легко читать и понимать исходники на низком уровне.
                     </div>
@@ -1196,8 +1216,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Тестируемость — показывает возможность тестирования ПО и проверки ее соответствия требованиям.
                     </div>
@@ -1223,11 +1243,12 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Понятность — показывает насколько легко понимать систему на высоком, архитектурном уровне.
-                        <br>
+                    </div>
+                    <div class="def">
                         Понятность характеризует согласованность системы на более общем уровне, чем удобочитаемость
                     </div>
                 </div>
@@ -1238,12 +1259,12 @@
 
 <section class="slide fallout chapter-wrapper">
     <img class="code-bg" src="pictures/code-bg.jpg" alt="">
-    <div class="chapter-title">Влияние  характеристик друг на друга</div>
+    <div class="chapter-title">Влияние характеристик друг на друга</div>
 </section>
 <section class="slide fallout">
     <img class="code-bg" src="pictures/code-bg.jpg" alt="">
     <fieldset>
-        <legend>Влияние  характеристик друг на друга</legend>
+        <legend>Влияние характеристик друг на друга</legend>
         <div class="grid">
             <table class="characteristic">
                 <tr class="tr-rotate">
@@ -1353,7 +1374,7 @@
 <section class="slide fallout">
     <img class="code-bg" src="pictures/code-bg.jpg" alt="">
     <fieldset>
-        <legend>Влияние  характеристик друг на друга</legend>
+        <legend>Влияние характеристик друг на друга</legend>
         <div class="grid">
             <div class="left">
                 <ul class="list">
@@ -1363,8 +1384,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Одни характеристики качества облегчают жизнь пользователям, а другие — программистам
                     </div>
@@ -1376,7 +1397,7 @@
 <section class="slide fallout">
     <img class="code-bg" src="pictures/code-bg.jpg" alt="">
     <fieldset>
-        <legend>Влияние  характеристик друг на друга</legend>
+        <legend>Влияние характеристик друг на друга</legend>
         <div class="grid">
             <div class="left">
                 <ul class="list">
@@ -1386,8 +1407,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Улучшение некоторых аспектов качества неизбежно приводит к ухудшению других
                     </div>
@@ -1399,7 +1420,7 @@
 <section class="slide fallout">
     <img class="code-bg" src="pictures/code-bg.jpg" alt="">
     <fieldset>
-        <legend>Влияние  характеристик друг на друга</legend>
+        <legend>Влияние характеристик друг на друга</legend>
         <div class="grid">
             <div class="left">
                 <ul class="list">
@@ -1409,8 +1430,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">Таблица отражает только типичные отношения.</div>
                     <div class="def">В конкретном проекте две характеристики могут быть связаны и нетипичным отношением
                     </div>
@@ -1433,7 +1454,8 @@
                 <div class="text full">
                     <div class="def">
                         Повышать качество ПО можно с помощью Контроля качеста ПО.
-                        <br>
+                    </div>
+                    <div class="def">
                         Контроль качества ПО — это планомерная и систематичная программа действий, призванная
                         гарантировать, что система обладает желательными характеристиками.
                     </div>
@@ -1452,15 +1474,15 @@
                     <div class="def">
                         Рассмотрим несколько методик контроля качества ПО, которые ориентированны на процесс:
                     </div>
-                    <ul>
-                        <li>Целевые характеристики качества ПО</li>
-                        <li>Явный контроль качества</li>
-                        <li>Стратегия тестирования</li>
-                        <li>Принципы разработки ПО</li>
-                        <li>Неформальные технические обзоры</li>
-                        <li>Формальные технические обзоры</li>
-                        <li>Внешний аудит</li>
-                    </ul>
+                        <ul>
+                            <li class="def">Целевые характеристики качества ПО</li>
+                            <li class="def">Явный контроль качества</li>
+                            <li class="def">Стратегия тестирования</li>
+                            <li class="def">Принципы разработки ПО</li>
+                            <li class="def">Неформальные технические обзоры</li>
+                            <li class="def">Формальные технические обзоры</li>
+                            <li class="def">Внешний аудит</li>
+                        </ul>
                 </div>
             </div>
         </div>
@@ -1483,11 +1505,14 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Одной из эффективных методик повышения качества ПО является явное определение целевых внешних и
-                        внутренних характеристик. Не имея явных целей, программисты могут сосредоточиться не на тех
+                        внутренних характеристик. 
+                    </div>
+                    <div class="def">
+                        Не имея явных целей, программисты могут сосредоточиться не на тех
                         характеристиках качества, на которых следовало бы
                     </div>
                 </div>
@@ -1513,8 +1538,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Явное задание целевых аспектов качества — простой и очевидный способ повышения качества ПО, но
                         его легко упустить.
@@ -1605,12 +1630,14 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
-                        Руководители должны показать программистам, что качество — одна из важнейших целей. 
-                        <br>Явный
-                        контроль качества делает это очевидным, и программисты отвечают соответствующим образом
+                        Руководители должны показать программистам, что качество — одна из важнейших целей.
+
+                    </div>
+                    <div class="def">
+                        Явный контроль качества делает это очевидным, и программисты отвечают соответствующим образом
                     </div>
                 </div>
             </div>
@@ -1634,13 +1661,14 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
-                        Тестирование программы может предоставить детальную оценку ее надежности. 
-                        <br>Частью контроля
-                        качества является разработка стратегии тестирования, учитывающей требования к системе, ее
-                        архитектуру и проект.
+                        Тестирование программы может предоставить детальную оценку ее надежности.
+                    </div>
+                    <div class="def">
+                        Частью контроля качества является разработка стратегии тестирования, учитывающей требования к
+                        системе, ее архитектуру и проект.
                     </div>
                 </div>
             </div>
@@ -1664,11 +1692,14 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
-                        Технический характер ПО во время его разработки должен контролироваться рядом принципов. 
-                        <br>Такие
+                        Технический характер ПО во время его разработки должен контролироваться рядом принципов.
+
+                    </div>
+                    <div class="def">
+                        Такие
                         принципы используются на всех этапах разработки ПО, включая определение проблемы, выработку
                         требований, конструирование и тестирование системы.
                     </div>
@@ -1694,13 +1725,15 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Многие разработчики сами выполняют обзор своей работы до проведения формального обзора.
-                        <br>Неформальный обзор может выражаться в самостоятельной проверке проекта или кода, а также в
-                        анализе кода вместе с коллегами
+
                     </div>
+                    <div class="def">Неформальный обзор может выражаться в самостоятельной проверке проекта или кода, а
+                        также в
+                        анализе кода вместе с коллегами</div>
                 </div>
             </div>
         </div>
@@ -1723,13 +1756,14 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Важный аспект управления процессом разработки ПО — исправление проблем на этапе «наименьших
-                        затрат». 
-                        <br>Для достижения этой цели служат «ворота качества».
+                        затрат».
+
                     </div>
+                    <div class="def">Для достижения этой цели служат «ворота качества».</div>
                 </div>
             </div>
         </div>
@@ -1752,12 +1786,15 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Внешний аудит — это отдельный тип технического обзора, служащий для определения статуса проекта
-                        или качества разрабатываемой системы. 
-                        <br>Аудит выполняют специалисты другой организации, которые
+                        или качества разрабатываемой системы.
+
+                    </div>
+                    <div class="def">
+                        Аудит выполняют специалисты другой организации, которые
                         сообщают результаты своей работы тому, кто оплачивает аудит, обычно руководителям
                     </div>
                 </div>
@@ -1777,11 +1814,11 @@
                         Рассмотрим несколько методик разработки не являющиеся сами по себе аспектами контроля качества,
                         но которые также влияют на качество ПО:
                     </div>
-                    <ul>
-                        <li>Процедуры контроля изменений</li>
-                        <li>Оценка результатов</li>
-                        <li>Прототипирование</li>
-                    </ul>
+                        <ul>
+                            <li class="def">Процедуры контроля изменений</li>
+                            <li class="def">Оценка результатов</li>
+                            <li class="def">Прототипирование</li>
+                        </ul>
                 </div>
             </div>
         </div>
@@ -1800,8 +1837,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">Изменения естественным образом вызывают дестабилизацию системы и снижение ее
                         качества, поэтому эффективный контроль изменений — важнейшее условие достижения высокого
                         качества ПО.
@@ -1824,8 +1861,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Оценка позволяет не только узнать эффективность плана, но и изменить процесс разработки
                         контролируемым образом с целью его улучшения.
@@ -1848,8 +1885,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Разработчики могут использовать прототипирование для определения удобства пользовательского
                         интерфейса, времени выполнения важных вычислений или объема памяти, нужного для хранения
@@ -1876,8 +1913,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Плохая новость - не все методики контроля качества имеют одинаковую эффективность.
                     </div>
@@ -1898,8 +1935,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Хорошая новость - Эффективность многих методик в плане нахождения и устранения дефектов уже
                         известна.
@@ -2019,17 +2056,22 @@
         <legend>Эффективность методик повышения качества ПО</legend>
         <div class="grid">
             <div class="right">
-                <div class="text full">Можно сделать следующие выводы:
-                    <ul>
-                        <li>Не все методики контроля качества имеют одинаковую эффективность</li>
-                        <li>Некоторые методики более эффективны в обнаружении дефектов, чем другие, к тому же разные
-                            методики приводят к обнаружению разных дефектов
-                        </li>
-                        <li>Типичная эффективность обнаружения дефектов при использовании любой методики не превышает
-                            75% и что в среднем она равна примерно 40%
-                        </li>
-                        <li>Необходимо полагаться на комбинацию методик</li>
-                    </ul>
+                <div class="text full">
+                    <div class="def">
+                        Можно сделать следующие выводы:
+                    </div>
+
+                        <ul>
+                            <li class="def">Не все методики контроля качества имеют одинаковую эффективность</li>
+                            <li class="def">Некоторые методики более эффективны в обнаружении дефектов, чем другие, к тому же разные
+                                методики приводят к обнаружению разных дефектов
+                            </li>
+                            <li class="def">Типичная эффективность обнаружения дефектов при использовании любой методики не
+                                превышает
+                                75% и что в среднем она равна примерно 40%
+                            </li>
+                            <li class="def">Необходимо полагаться на комбинацию методик</li>
+                        </ul>
                 </div>
             </div>
         </div>
@@ -2053,13 +2095,16 @@
             </div>
             <div class="right">
                 <div class="text full">
-                    Команды использовали одну из 3 комбинаций условий:
-                    <ul>
-                        <li>тестирование выполнения программы по спецификации;</li>
-                        <li>тестирование выполнения программы по спецификации с возможностью изучения исходного кода;
-                        </li>
-                        <li>анализ/инспекция с использованием и спецификации, и исходного кода</li>
-                    </ul>
+                    <div class="def">
+                        Команды использовали одну из 3 комбинаций условий:
+                    </div>
+                        <ul>
+                            <li class="def">тестирование выполнения программы по спецификации;</li>
+                            <li class="def">тестирование выполнения программы по спецификации с возможностью изучения исходного
+                                кода;
+                            </li>
+                            <li class="def">анализ/инспекция с использованием и спецификации, и исходного кода</li>
+                        </ul>
                 </div>
             </div>
         </div>
@@ -2108,8 +2153,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Некоторые методики обнаружения дефектов дороже других. Наиболее экономичные при прочих равных
                         условиях имеют наименьшую стоимость в расчете на один обнаруженный дефект.
@@ -2134,8 +2179,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         При чтении кода число дефектов, находимых в час, было примерно на 80% более высоким, чем при
                         тестировании
@@ -2225,7 +2270,7 @@
             </div>
             <div class="right">
                 <img src="pictures/67.jpg" alt="">
-                <div class="text">
+                <div>
                     <div class="def">
                         Чем раньше ошибка внедряется в приложение, тем сильнее она переплетается с другими частями
                         приложения и тем больше средств придется потратить на ее устранение.
@@ -2249,14 +2294,16 @@
             </div>
             <div class="right">
                 <div class="text full">
-                    <ul>
-                        <li>Дефект в требованиях может вылиться в один или несколько дефектов в проекте, которые могут
-                            привести к появлению множества дефектов в коде.</li>
-                        <li>Ошибка в требованиях может привести к разработке дополнительных компонентов архитектуры или
-                            подтолкнуть к неудачным архитектурным решениям.</li>
-                        <li>Одна ошибка в архитектуре может затронуть несколько классов и десятки методов, тогда как
-                            одна ошибка конструирования скорее всего повлияет только на один метод или класс</li>
-                    </ul>
+                        <ul>
+                            <li class="def">Дефект в требованиях может вылиться в один или несколько дефектов в проекте, которые
+                                могут
+                                привести к появлению множества дефектов в коде.</li>
+                            <li class="def">Ошибка в требованиях может привести к разработке дополнительных компонентов архитектуры
+                                или
+                                подтолкнуть к неудачным архитектурным решениям.</li>
+                            <li class="def">Одна ошибка в архитектуре может затронуть несколько классов и десятки методов, тогда как
+                                одна ошибка конструирования скорее всего повлияет только на один метод или класс</li>
+                        </ul>
                 </div>
             </div>
         </div>
@@ -2279,11 +2326,11 @@
                     <div class="def">
                         Контроль качества:
                     </div>
-                    <ul>
-                        <li>Необходимо внести в планы в начале работы над программой</li>
-                        <li>Следует выполнять по мере прогресса</li>
-                        <li>Должен подчеркивать удачное завершение работы над проектом</li>
-                    </ul>
+                        <ul>
+                            <li class="def">Необходимо внести в планы в начале работы над программой</li>
+                            <li class="def">Следует выполнять по мере прогресса</li>
+                            <li class="def">Должен подчеркивать удачное завершение работы над проектом</li>
+                        </ul>
                 </div>
             </div>
         </div>
@@ -2306,8 +2353,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Главный Закон Контроля Качества ПО заключается в том, что повышение качества системы снижает
                         расходы на ее разработку
@@ -2330,8 +2377,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">
                         Лучшим способом повышения производительности труда программистов и качества ПО является
                         минимизация времени, затрачиваемого на исправление кода, чем бы оно ни объяснялось: изменениями
@@ -2393,8 +2440,8 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">Высокого качества можно достичь без дополнительных затрат.</div>
                 </div>
             </div>
@@ -2409,15 +2456,15 @@
             <div class="left">
                 <ul class="list">
                     <li>Затраты на качество ПО</li>
-                    <li class="active">Влияение характеристик</li>
+                    <li class="active">Влияние характеристик</li>
                     <li>Эффективность методик</li>
                     <li>Стоимость нахождения дефекта</li>
                     <li>Контроль качества</li>
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">Стремление к одним характеристикам качества препятствует достижению других.</div>
                 </div>
             </div>
@@ -2432,15 +2479,15 @@
             <div class="left">
                 <ul class="list">
                     <li>Затраты на качество ПО</li>
-                    <li>Влияение характеристик</li>
+                    <li>Влияние характеристик</li>
                     <li class="active">Эффективность методик</li>
                     <li>Стоимость нахождения дефекта</li>
                     <li>Контроль качества</li>
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">Никакая методика обнаружения дефектов не является достаточно эффективной.</div>
                 </div>
             </div>
@@ -2455,14 +2502,14 @@
             <div class="left">
                 <ul class="list">
                     <li>Затраты на качество ПО</li>
-                    <li>Влияение характеристик</li>
+                    <li>Влияние характеристик</li>
                     <li>Эффективность методик</li>
                     <li class="active">Стоимость нахождения дефекта</li>
                     <li>Контроль качества</li>
                 </ul>
             </div>
             <div class="right">
-                <div class="text">
+                <div>
                     <div class="def">Чем раньше вы обнаружите дефект, тем слабее он переплетется с остальным кодом и тем
                         меньше вреда он успеет принести.</div>
                 </div>
@@ -2478,15 +2525,15 @@
             <div class="left">
                 <ul class="list">
                     <li>Затраты на качество ПО</li>
-                    <li>Влияение характеристик</li>
+                    <li>Влияние характеристик</li>
                     <li>Эффективность методик</li>
                     <li>Стоимость нахождения дефекта</li>
                     <li class="active">Контроль качества</li>
                 </ul>
             </div>
             <div class="right">
-                <div class="img" style="background-image: url('pictures/vault-boy.png')"></div>
-                <div class="text">
+                
+                <div>
                     <div class="def">В мире программирования контроль качества ориентирован на процесс.</div>
                 </div>
             </div>
